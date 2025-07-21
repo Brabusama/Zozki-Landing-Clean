@@ -1,2 +1,2 @@
-// Exemple pour ajouter du JS plus tard si besoin
-console.log("Zozki landing page ready.");
+// Zozki App JS - Ajoutez vos scripts ici
+console.log('Zozki App loaded.');
