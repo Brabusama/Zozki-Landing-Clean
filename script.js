@@ -1,2 +1,10 @@
-// Zozki App JS - Ajoutez vos scripts ici
-console.log('Zozki App loaded.');
+// Zozki - Animation au scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.section');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.2 });
+  sections.forEach(s => observer.observe(s));
+});
